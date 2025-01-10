@@ -9,28 +9,28 @@
          Technologies Egypt - Power of Innovation
 ```
 
-# Rotary Encoder Module v1.5
+# Rotary Encoder Module v1.6
 *Copyright © 2024 TLC-Technologies Egypt*
 *All rights reserved. Protected by IP laws in Egypt*
 
 *Released: January 2024*
 
 ```ascii
- +-----------------+
- |  Rotary Module  |
- +-----------------+
+ +------------------+
+ |  Rotary Module   |
+ +------------------+
         |
-   +----+----+
-   |         |
-+--+--+  +--+--+
-| Enc |  | Btn |
-+--+--+  +--+--+
-   |         |
-   +----+----+
+   +----+-----+
+   |          |
++--+--+   +---+---+
+| Enc |   | Button|
++--+--+   +---+---+
+   |          |
+   +----+-----+
         |
-    +---+---+
-    | Queue |
-    +---+---+
+    +---+----+
+    | Queues |
+    +---+----+
         |
   +-----+-----+
   |   Tasks   |
@@ -48,8 +48,8 @@
    ```
 
 ## Hardware Configuration
-- Pin A: GPIO 18
-- Pin B: GPIO 19
+- Pin A: GPIO 18 (Pull-up enabled)
+- Pin B: GPIO 19 (Pull-up enabled)
 - Button: GPIO 15 (Active Low, External Pull-up)
 
 ## Specifications
@@ -63,22 +63,32 @@
 - [x] Rotation counting
 - [x] Angle calculation
 - [x] Direction detection
+- [x] Button press duration measurement
+- [x] Button press counting
 - [x] Button debouncing
 - [x] Menu position tracking
-- [x] Step counting
+- [x] Multi-task support
+- [x] Event queuing system
 
 ## API Functions
 ```c
-void rotary_encoder_init(void);              // Initialize module
-int rotary_encoder_get_angle(void);          // Get current angle (0-359°)
-int rotary_encoder_get_rotations(void);      // Get complete rotations
-int rotary_encoder_get_menu_position(void);  // Get menu position
-int rotary_encoder_get_step_counter(void);   // Get step count
-int rotary_encoder_read_button(void);        // Read button state
+// Initialization
+void rotary_encoder_init(void);
+
+// Encoder Functions
+int rotary_encoder_get_angle(void);          // 0-359°
+int rotary_encoder_get_rotations(void);      // Complete rotations
+int rotary_encoder_get_menu_position(void);  // Menu position
+int rotary_encoder_get_step_counter(void);   // Step count
+
+// Button Functions
+uint32_t rotary_encoder_get_button_press_count(void);    // Total presses
+uint32_t rotary_encoder_get_last_press_duration(void);   // Last press duration
 ```
 
-## Event Structure
+## Event Structures
 ```c
+// Encoder Events
 typedef struct {
     int counter;              // Current position
     int steps;               // Total steps taken
@@ -87,6 +97,13 @@ typedef struct {
     int rotations;         // Complete rotations
     int menu_position;     // Menu selection
 } encoder_event_t;
+
+// Button Events
+typedef struct {
+    bool pressed;            // Button state
+    uint32_t press_duration; // Duration in ms
+    uint32_t press_count;    // Press counter
+} button_event_t;
 ```
 
 ## Implementation Details
@@ -95,21 +112,32 @@ typedef struct {
 - Queue-based event system
 - Thread-safe implementation
 
-## Example Output
+## Example Outputs
 ```
+// Encoder Events
 Direction: CW, Counter: 1, Total Steps: 1
 Angle: 18°, Rotations: 0, Menu Position: 1
+
+// Button Events
+Button pressed! Count: 0
+Button released! Duration: 320 ms, Total presses: 1
 ```
 
-## Task Priority
-- Encoder Task: 5
-- Printer Task: 1
+## Task Configuration
+- Encoder Task Priority: 5
+- Button Monitor Priority: 5
+- Printer Task Priority: 1
+- Button Poll Rate: 10ms
+- Encoder Poll Rate: 1ms
 
-## Dependencies
-- ESP-IDF
-- FreeRTOS
-- GPIO Driver
-- Timer Driver
+## Queue Configuration
+- Encoder Queue Size: 10 events
+- Button Queue Size: 5 events
+
+## Timing Parameters
+- Button Debounce: 50ms
+- Encoder Debounce: 5ms
+- Timer Resolution: 1MHz
 
 ## Future Improvements
 - [ ] Add acceleration support
@@ -128,6 +156,9 @@ Angle: 18°, Rotations: 0, Menu Position: 1
 - v1.1: Added debouncing
 - v1.2: Fixed duplicate readings
 - v1.3: Added menu position
+- v1.4: Improved stability
+- v1.5: Added documentation
+- v1.6: Added button timing and counting
 
 ## Legal Notice
 This code is protected under Egyptian intellectual property laws. 
@@ -135,6 +166,5 @@ Unauthorized copying, modification, or distribution is strictly prohibited.
 © 2024 TLC-Technologies Egypt. All rights reserved.
 
 ---
-Version: 1.5
 Last Updated: January 2024
 Contact: TLC-Technologies Egypt
