@@ -1,0 +1,140 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D A:\Eelectronics\TLC-SIM_v2\build\bootloader\esp-idf\esptool_py && C:\Users\alikhaledahmed\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/tlcadmin/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 A:/Eelectronics/TLC-SIM_v2/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ssd1306_esp32_c_driver.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/ssd1306_esp32_c_driver.c.obj 
+ccache C:\Users\alikhaledahmed\.espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.4\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IA:/Eelectronics/TLC-SIM_v2/build/config -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/platform_include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/config/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/config/include/freertos -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/config/xtensa/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/esp_additions/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/include/soc -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/dma/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/ldo/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/debug_probe/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/port/esp32/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/heap/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/heap/tlsf -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/log/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/soc/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/soc/esp32 -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/soc/esp32/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/soc/esp32/register -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/hal/platform_port/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/hal/esp32/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/hal/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_rom/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_rom/esp32/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_rom/esp32/include/esp32 -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_rom/esp32 -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_common/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/port/soc -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/port/include/private -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/xtensa/esp32/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/xtensa/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/xtensa/deprecated_include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/include/apps -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/include/apps/sntp -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/lwip/src/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/port/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/port/freertos/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/spi_flash/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/driver/deprecated -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/driver/i2c/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/driver/touch_sensor/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/driver/twai/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/driver/touch_sensor/esp32/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_pm/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_ringbuf/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_gpio/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_pcnt/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_gptimer/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_spi/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_mcpwm/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_ana_cmpr/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_i2s/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_sdmmc/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/sdmmc/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_sdspi/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_sdio/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_dac/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_rmt/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_tsens/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_sdm/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_i2c/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_uart/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/vfs/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_ledc/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_parlio/include -IC:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_usb_serial_jtag/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=A:/Eelectronics/TLC-SIM_v2=. -fmacro-prefix-map=C:/Users/tlcadmin/esp/v5.4/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/ssd1306_esp32_c_driver.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\ssd1306_esp32_c_driver.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/ssd1306_esp32_c_driver.c.obj -c A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c: In function 'ssd1306_send_command':
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:27:5: error: unknown type name 'i2c_cmd_handle_t'; did you mean 'intr_handle_t'?
+   27 |     i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+      |     ^~~~~~~~~~~~~~~~
+      |     intr_handle_t
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:27:28: error: implicit declaration of function 'i2c_cmd_link_create' [-Wimplicit-function-declaration]
+   27 |     i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+      |                            ^~~~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:28:5: error: implicit declaration of function 'i2c_master_start'; did you mean 'i2c_master_probe'? [-Wimplicit-function-declaration]
+   28 |     i2c_master_start(cmd);
+      |     ^~~~~~~~~~~~~~~~
+      |     i2c_master_probe
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:29:5: error: implicit declaration of function 'i2c_master_write_byte'; did you mean 'i2c_master_probe'? [-Wimplicit-function-declaration]
+   29 |     i2c_master_write_byte(cmd, (SSD1306_ADDR << 1) | I2C_MASTER_WRITE, true);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+      |     i2c_master_probe
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:32:5: error: implicit declaration of function 'i2c_master_stop'; did you mean 'i2c_master_probe'? [-Wimplicit-function-declaration]
+   32 |     i2c_master_stop(cmd);
+      |     ^~~~~~~~~~~~~~~
+      |     i2c_master_probe
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:33:5: error: implicit declaration of function 'i2c_master_cmd_begin' [-Wimplicit-function-declaration]
+   33 |     i2c_master_cmd_begin(I2C_MASTER_NUM, cmd, 1000 / portTICK_PERIOD_MS);
+      |     ^~~~~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:34:5: error: implicit declaration of function 'i2c_cmd_link_delete' [-Wimplicit-function-declaration]
+   34 |     i2c_cmd_link_delete(cmd);
+      |     ^~~~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c: In function 'ssd1306_send_data':
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:40:5: error: unknown type name 'i2c_cmd_handle_t'; did you mean 'intr_handle_t'?
+   40 |     i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+      |     ^~~~~~~~~~~~~~~~
+      |     intr_handle_t
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:44:5: error: implicit declaration of function 'i2c_master_write'; did you mean 'i2c_master_probe'? [-Wimplicit-function-declaration]
+   44 |     i2c_master_write(cmd, data, length, true);
+      |     ^~~~~~~~~~~~~~~~
+      |     i2c_master_probe
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c: In function 'ssd1306_init':
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:53:5: error: unknown type name 'i2c_config_t'; did you mean 'gpio_config_t'?
+   53 |     i2c_config_t conf = {
+      |     ^~~~~~~~~~~~
+      |     gpio_config_t
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:54:9: error: field name not in record or union initializer
+   54 |         .mode = I2C_MODE_MASTER,
+      |         ^
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:54:9: note: (near initialization for 'conf')
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:55:9: error: field name not in record or union initializer
+   55 |         .sda_io_num = I2C_MASTER_SDA_IO,
+      |         ^
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:55:9: note: (near initialization for 'conf')
+In file included from A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:1:
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.h:10:25: warning: excess elements in scalar initializer
+   10 | #define SSD1306_SDA_PIN 21
+      |                         ^~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:7:27: note: in expansion of macro 'SSD1306_SDA_PIN'
+    7 | #define I2C_MASTER_SDA_IO SSD1306_SDA_PIN
+      |                           ^~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:55:23: note: in expansion of macro 'I2C_MASTER_SDA_IO'
+   55 |         .sda_io_num = I2C_MASTER_SDA_IO,
+      |                       ^~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.h:10:25: note: (near initialization for 'conf')
+   10 | #define SSD1306_SDA_PIN 21
+      |                         ^~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:7:27: note: in expansion of macro 'SSD1306_SDA_PIN'
+    7 | #define I2C_MASTER_SDA_IO SSD1306_SDA_PIN
+      |                           ^~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:55:23: note: in expansion of macro 'I2C_MASTER_SDA_IO'
+   55 |         .sda_io_num = I2C_MASTER_SDA_IO,
+      |                       ^~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:56:9: error: field name not in record or union initializer
+   56 |         .scl_io_num = I2C_MASTER_SCL_IO,
+      |         ^
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:56:9: note: (near initialization for 'conf')
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.h:9:25: warning: excess elements in scalar initializer
+    9 | #define SSD1306_SCL_PIN 22
+      |                         ^~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:8:27: note: in expansion of macro 'SSD1306_SCL_PIN'
+    8 | #define I2C_MASTER_SCL_IO SSD1306_SCL_PIN
+      |                           ^~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:56:23: note: in expansion of macro 'I2C_MASTER_SCL_IO'
+   56 |         .scl_io_num = I2C_MASTER_SCL_IO,
+      |                       ^~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.h:9:25: note: (near initialization for 'conf')
+    9 | #define SSD1306_SCL_PIN 22
+      |                         ^~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:8:27: note: in expansion of macro 'SSD1306_SCL_PIN'
+    8 | #define I2C_MASTER_SCL_IO SSD1306_SCL_PIN
+      |                           ^~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:56:23: note: in expansion of macro 'I2C_MASTER_SCL_IO'
+   56 |         .scl_io_num = I2C_MASTER_SCL_IO,
+      |                       ^~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:57:9: error: field name not in record or union initializer
+   57 |         .sda_pullup_en = GPIO_PULLUP_ENABLE,
+      |         ^
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:57:9: note: (near initialization for 'conf')
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:57:26: warning: excess elements in scalar initializer
+   57 |         .sda_pullup_en = GPIO_PULLUP_ENABLE,
+      |                          ^~~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:57:26: note: (near initialization for 'conf')
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:58:9: error: field name not in record or union initializer
+   58 |         .scl_pullup_en = GPIO_PULLUP_ENABLE,
+      |         ^
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:58:9: note: (near initialization for 'conf')
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:58:26: warning: excess elements in scalar initializer
+   58 |         .scl_pullup_en = GPIO_PULLUP_ENABLE,
+      |                          ^~~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:58:26: note: (near initialization for 'conf')
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:59:9: error: field name not in record or union initializer
+   59 |         .master.clk_speed = I2C_MASTER_FREQ_HZ,
+      |         ^
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:59:9: note: (near initialization for 'conf')
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:9:28: warning: excess elements in scalar initializer
+    9 | #define I2C_MASTER_FREQ_HZ 100000
+      |                            ^~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:59:29: note: in expansion of macro 'I2C_MASTER_FREQ_HZ'
+   59 |         .master.clk_speed = I2C_MASTER_FREQ_HZ,
+      |                             ^~~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:9:28: note: (near initialization for 'conf')
+    9 | #define I2C_MASTER_FREQ_HZ 100000
+      |                            ^~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:59:29: note: in expansion of macro 'I2C_MASTER_FREQ_HZ'
+   59 |         .master.clk_speed = I2C_MASTER_FREQ_HZ,
+      |                             ^~~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:61:5: error: implicit declaration of function 'i2c_param_config' [-Wimplicit-function-declaration]
+   61 |     i2c_param_config(I2C_MASTER_NUM, &conf);
+      |     ^~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:62:5: error: implicit declaration of function 'i2c_driver_install' [-Wimplicit-function-declaration]
+   62 |     i2c_driver_install(I2C_MASTER_NUM, conf.mode, 0, 0, 0);
+      |     ^~~~~~~~~~~~~~~~~~
+A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c:62:44: error: request for member 'mode' in something not a structure or union
+   62 |     i2c_driver_install(I2C_MASTER_NUM, conf.mode, 0, 0, 0);
+      |                                            ^
+ninja: build stopped: subcommand failed.

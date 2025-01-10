@@ -1,0 +1,49 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082877: lock_acquire_generic at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x400818f5: panic_abort at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40085a41: esp_system_abort at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008b7e1: abort at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x40082877: lock_acquire_generic at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/locks.c:133
+0x400829b5: _lock_acquire_recursive at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/locks.c:162
+0x40082a2e: __retarget_lock_acquire_recursive at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/locks.c:321
+0x400da533: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9ac7: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x40082c19: timer_isr_callback at A:/Eelectronics/TLC-SIM_v2/main/rotary_encoder_module.c:59
+0x400846e8: gptimer_default_isr at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_gptimer/src/gptimer.c:448
+0x4008301d: _xt_lowint1 at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400847ef: xt_utils_wait_for_intr at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/cpu.c:55
+0x400d2307: esp_vApplicationIdleHook at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/freertos_hooks.c:58
+0x40087022: prvIdleTask at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+0x40086235: vPortTaskWrapper at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40082877: lock_acquire_generic at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/locks.c:133
+[0m
+[0;33m--- 0x400818f5: panic_abort at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40085a41: esp_system_abort at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008b7e1: abort at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x40082877: lock_acquire_generic at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/locks.c:133
+0x400829b5: _lock_acquire_recursive at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/locks.c:162
+0x40082a2e: __retarget_lock_acquire_recursive at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/newlib/locks.c:321
+0x400da533: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9ac7: printf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+0x40082c9e: timer_isr_callback at A:/Eelectronics/TLC-SIM_v2/main/rotary_encoder_module.c:79 (discriminator 4)
+0x400846e8: gptimer_default_isr at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_driver_gptimer/src/gptimer.c:448
+0x4008301d: _xt_lowint1 at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400847ef: xt_utils_wait_for_intr at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/xtensa/include/xt_utils.h:82
+ (inlined by) esp_cpu_wait_for_intr at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_hw_support/cpu.c:55
+0x400d2307: esp_vApplicationIdleHook at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/esp_system/freertos_hooks.c:58
+0x40087022: prvIdleTask at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+0x40086235: vPortTaskWrapper at C:/Users/tlcadmin/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

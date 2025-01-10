@@ -1,0 +1,28 @@
+fatal: detected dubious ownership in repository at 'C:/Users/tlcadmin/esp/v5.4/esp-idf/components/openthread/openthread'
+'C:/Users/tlcadmin/esp/v5.4/esp-idf/components/openthread/openthread/.git' is owned by:
+	'S-1-5-32-544'
+but the current user is:
+	'S-1-5-21-4114782048-1544865592-1965776125-1000'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory C:/Users/tlcadmin/esp/v5.4/esp-idf/components/openthread/openthread
+CMake Error at C:/Users/tlcadmin/esp/v5.4/esp-idf/tools/cmake/component.cmake:490 (add_library):
+  Cannot find source file:
+
+    A:/Eelectronics/TLC-SIM_v2/main/ssd1306_esp32_c_driver.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+  .f95 .f03 .hip .ispc
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Error at C:/Users/tlcadmin/esp/v5.4/esp-idf/tools/cmake/component.cmake:490 (add_library):
+  No SOURCES given to target: __idf_main
+Call Stack (most recent call first):
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+ninja: error: rebuilding 'build.ninja': subcommand failed

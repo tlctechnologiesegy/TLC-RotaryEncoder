@@ -1,0 +1,1032 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  9 2025 14:42:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a524h ( 42276) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a54c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a570 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001c8e4 vaddr=40080000 size=03734h ( 14132) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14f04h ( 85764) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00034f2c vaddr=40083734 size=09994h ( 39316) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (185) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     TLC-SIM_v2[0m
+[0;32mI (197) app_init: App version:      1[0m
+[0;32mI (201) app_init: Compile time:     Jan 10 2025 11:16:32[0m
+[0;32mI (206) app_init: ELF file SHA256:  b7befa331...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008D0C8 len 00012F38 (75 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+Hello, world!
+Direction: CCW, Counter: 0, Total Steps: 0
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CCW, Counter: 0, Total Steps: 0
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CCW, Counter: 1, Total Steps: 3
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 1, Total Steps: 3
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 1, Total Steps: 3
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 1, Total Steps: 3
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 0, Total Steps: 4
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CCW, Counter: 0, Total Steps: 4
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CCW, Counter: 0, Total Steps: 4
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CCW, Counter: 0, Total Steps: 4
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CCW, Counter: -1, Total Steps: 5
+Angle: 342°, Rotations: 0, Menu Position: -1
+Direction: CCW, Counter: -1, Total Steps: 5
+Angle: 342°, Rotations: 0, Menu Position: -1
+Direction: CCW, Counter: -1, Total Steps: 5
+Angle: 342°, Rotations: 0, Menu Position: -1
+Direction: CCW, Counter: -1, Total Steps: 5
+Angle: 342°, Rotations: 0, Menu Position: -1
+Direction: CCW, Counter: -2, Total Steps: 6
+Angle: 324°, Rotations: 0, Menu Position: -2
+Direction: CCW, Counter: -2, Total Steps: 6
+Angle: 324°, Rotations: 0, Menu Position: -2
+Direction: CCW, Counter: -2, Total Steps: 6
+Angle: 324°, Rotations: 0, Menu Position: -2
+Direction: CCW, Counter: -2, Total Steps: 6
+Angle: 324°, Rotations: 0, Menu Position: -2
+Direction: CCW, Counter: -3, Total Steps: 7
+Angle: 306°, Rotations: 0, Menu Position: -3
+Direction: CCW, Counter: -3, Total Steps: 7
+Angle: 306°, Rotations: 0, Menu Position: -3
+Direction: CCW, Counter: -3, Total Steps: 7
+Angle: 306°, Rotations: 0, Menu Position: -3
+Direction: CCW, Counter: -3, Total Steps: 7
+Angle: 306°, Rotations: 0, Menu Position: -3
+Direction: CCW, Counter: -4, Total Steps: 8
+Angle: 288°, Rotations: 0, Menu Position: -4
+Direction: CCW, Counter: -4, Total Steps: 8
+Angle: 288°, Rotations: 0, Menu Position: -4
+Direction: CCW, Counter: -4, Total Steps: 8
+Angle: 288°, Rotations: 0, Menu Position: -4
+Direction: CCW, Counter: -4, Total Steps: 8
+Angle: 288°, Rotations: 0, Menu Position: -4
+Direction: CCW, Counter: -5, Total Steps: 9
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CCW, Counter: -5, Total Steps: 9
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CCW, Counter: -5, Total Steps: 9
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CCW, Counter: -5, Total Steps: 9
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CCW, Counter: -6, Total Steps: 10
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CCW, Counter: -6, Total Steps: 10
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CCW, Counter: -6, Total Steps: 10
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CCW, Counter: -6, Total Steps: 10
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CCW, Counter: -7, Total Steps: 11
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CCW, Counter: -7, Total Steps: 11
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CCW, Counter: -7, Total Steps: 11
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CCW, Counter: -7, Total Steps: 11
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CCW, Counter: -8, Total Steps: 12
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CCW, Counter: -8, Total Steps: 12
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CCW, Counter: -8, Total Steps: 12
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CCW, Counter: -8, Total Steps: 12
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CCW, Counter: -9, Total Steps: 13
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CCW, Counter: -9, Total Steps: 13
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CCW, Counter: -9, Total Steps: 13
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CCW, Counter: -9, Total Steps: 13
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CCW, Counter: -10, Total Steps: 14
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CCW, Counter: -10, Total Steps: 14
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CCW, Counter: -10, Total Steps: 14
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CCW, Counter: -10, Total Steps: 14
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CCW, Counter: -11, Total Steps: 15
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CCW, Counter: -11, Total Steps: 15
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CCW, Counter: -11, Total Steps: 15
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CCW, Counter: -11, Total Steps: 15
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CCW, Counter: -12, Total Steps: 16
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CCW, Counter: -12, Total Steps: 16
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CCW, Counter: -12, Total Steps: 16
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CW, Counter: -11, Total Steps: 17
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CW, Counter: -11, Total Steps: 17
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CW, Counter: -11, Total Steps: 17
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CW, Counter: -11, Total Steps: 17
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CW, Counter: -10, Total Steps: 18
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CW, Counter: -10, Total Steps: 18
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CW, Counter: -10, Total Steps: 18
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CW, Counter: -10, Total Steps: 18
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CW, Counter: -9, Total Steps: 19
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CW, Counter: -9, Total Steps: 19
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CW, Counter: -9, Total Steps: 19
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CW, Counter: -9, Total Steps: 19
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CW, Counter: -8, Total Steps: 20
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CW, Counter: -8, Total Steps: 20
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CW, Counter: -8, Total Steps: 20
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CW, Counter: -8, Total Steps: 20
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CW, Counter: -7, Total Steps: 21
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CW, Counter: -7, Total Steps: 21
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CW, Counter: -7, Total Steps: 21
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CW, Counter: -7, Total Steps: 21
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CW, Counter: -6, Total Steps: 22
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CW, Counter: -6, Total Steps: 22
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CW, Counter: -6, Total Steps: 22
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CW, Counter: -6, Total Steps: 22
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CW, Counter: -5, Total Steps: 23
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CW, Counter: -5, Total Steps: 23
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CW, Counter: -5, Total Steps: 23
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CW, Counter: -5, Total Steps: 23
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CW, Counter: -5, Total Steps: 23
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CCW, Counter: -6, Total Steps: 24
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CCW, Counter: -6, Total Steps: 24
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CCW, Counter: -6, Total Steps: 24
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CCW, Counter: -6, Total Steps: 24
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CCW, Counter: -7, Total Steps: 25
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CCW, Counter: -7, Total Steps: 25
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CCW, Counter: -7, Total Steps: 25
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CCW, Counter: -7, Total Steps: 25
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CCW, Counter: -8, Total Steps: 26
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CCW, Counter: -8, Total Steps: 26
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CCW, Counter: -8, Total Steps: 26
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CCW, Counter: -8, Total Steps: 26
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CCW, Counter: -9, Total Steps: 27
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CCW, Counter: -9, Total Steps: 27
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CCW, Counter: -9, Total Steps: 27
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CCW, Counter: -9, Total Steps: 27
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CCW, Counter: -10, Total Steps: 28
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CCW, Counter: -10, Total Steps: 28
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CCW, Counter: -10, Total Steps: 28
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CCW, Counter: -10, Total Steps: 28
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CCW, Counter: -11, Total Steps: 29
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CCW, Counter: -11, Total Steps: 29
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CCW, Counter: -11, Total Steps: 29
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CCW, Counter: -11, Total Steps: 29
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CCW, Counter: -12, Total Steps: 30
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CCW, Counter: -12, Total Steps: 30
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CCW, Counter: -12, Total Steps: 30
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CCW, Counter: -12, Total Steps: 30
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CCW, Counter: -13, Total Steps: 31
+Angle: 126°, Rotations: 0, Menu Position: -13
+Direction: CCW, Counter: -13, Total Steps: 31
+Angle: 126°, Rotations: 0, Menu Position: -13
+Direction: CCW, Counter: -13, Total Steps: 31
+Angle: 126°, Rotations: 0, Menu Position: -13
+Direction: CCW, Counter: -13, Total Steps: 31
+Angle: 126°, Rotations: 0, Menu Position: -13
+Direction: CCW, Counter: -14, Total Steps: 32
+Angle: 108°, Rotations: 0, Menu Position: -14
+Direction: CCW, Counter: -14, Total Steps: 32
+Angle: 108°, Rotations: 0, Menu Position: -14
+Direction: CCW, Counter: -14, Total Steps: 32
+Angle: 108°, Rotations: 0, Menu Position: -14
+Direction: CCW, Counter: -14, Total Steps: 32
+Angle: 108°, Rotations: 0, Menu Position: -14
+Direction: CCW, Counter: -15, Total Steps: 33
+Angle: 90°, Rotations: 0, Menu Position: -15
+Direction: CCW, Counter: -15, Total Steps: 33
+Angle: 90°, Rotations: 0, Menu Position: -15
+Direction: CCW, Counter: -15, Total Steps: 33
+Angle: 90°, Rotations: 0, Menu Position: -15
+Direction: CCW, Counter: -15, Total Steps: 33
+Angle: 90°, Rotations: 0, Menu Position: -15
+Direction: CCW, Counter: -16, Total Steps: 34
+Angle: 72°, Rotations: 0, Menu Position: -16
+Direction: CCW, Counter: -16, Total Steps: 34
+Angle: 72°, Rotations: 0, Menu Position: -16
+Direction: CCW, Counter: -16, Total Steps: 34
+Angle: 72°, Rotations: 0, Menu Position: -16
+Direction: CCW, Counter: -16, Total Steps: 34
+Angle: 72°, Rotations: 0, Menu Position: -16
+Direction: CCW, Counter: -17, Total Steps: 35
+Angle: 54°, Rotations: 0, Menu Position: -17
+Direction: CCW, Counter: -17, Total Steps: 35
+Angle: 54°, Rotations: 0, Menu Position: -17
+Direction: CCW, Counter: -17, Total Steps: 35
+Angle: 54°, Rotations: 0, Menu Position: -17
+Direction: CCW, Counter: -17, Total Steps: 35
+Angle: 54°, Rotations: 0, Menu Position: -17
+Direction: CCW, Counter: -18, Total Steps: 36
+Angle: 36°, Rotations: 0, Menu Position: -18
+Direction: CCW, Counter: -18, Total Steps: 36
+Angle: 36°, Rotations: 0, Menu Position: -18
+Direction: CCW, Counter: -18, Total Steps: 36
+Angle: 36°, Rotations: 0, Menu Position: -18
+Direction: CCW, Counter: -18, Total Steps: 36
+Angle: 36°, Rotations: 0, Menu Position: -18
+Direction: CCW, Counter: -19, Total Steps: 37
+Angle: 18°, Rotations: 0, Menu Position: -19
+Direction: CCW, Counter: -19, Total Steps: 37
+Angle: 18°, Rotations: 0, Menu Position: -19
+Direction: CCW, Counter: -19, Total Steps: 37
+Angle: 18°, Rotations: 0, Menu Position: -19
+Direction: CW, Counter: -18, Total Steps: 38
+Angle: 36°, Rotations: 0, Menu Position: -18
+Direction: CW, Counter: -18, Total Steps: 38
+Angle: 36°, Rotations: 0, Menu Position: -18
+Direction: CW, Counter: -18, Total Steps: 38
+Angle: 36°, Rotations: 0, Menu Position: -18
+Direction: CW, Counter: -18, Total Steps: 38
+Angle: 36°, Rotations: 0, Menu Position: -18
+Direction: CW, Counter: -17, Total Steps: 39
+Angle: 54°, Rotations: 0, Menu Position: -17
+Direction: CW, Counter: -17, Total Steps: 39
+Angle: 54°, Rotations: 0, Menu Position: -17
+Direction: CW, Counter: -17, Total Steps: 39
+Angle: 54°, Rotations: 0, Menu Position: -17
+Direction: CW, Counter: -17, Total Steps: 39
+Angle: 54°, Rotations: 0, Menu Position: -17
+Direction: CW, Counter: -16, Total Steps: 40
+Angle: 72°, Rotations: 0, Menu Position: -16
+Direction: CW, Counter: -16, Total Steps: 40
+Angle: 72°, Rotations: 0, Menu Position: -16
+Direction: CW, Counter: -16, Total Steps: 40
+Angle: 72°, Rotations: 0, Menu Position: -16
+Direction: CW, Counter: -16, Total Steps: 40
+Angle: 72°, Rotations: 0, Menu Position: -16
+Direction: CW, Counter: -15, Total Steps: 41
+Angle: 90°, Rotations: 0, Menu Position: -15
+Direction: CW, Counter: -15, Total Steps: 41
+Angle: 90°, Rotations: 0, Menu Position: -15
+Direction: CW, Counter: -15, Total Steps: 41
+Angle: 90°, Rotations: 0, Menu Position: -15
+Direction: CW, Counter: -15, Total Steps: 41
+Angle: 90°, Rotations: 0, Menu Position: -15
+Direction: CW, Counter: -14, Total Steps: 42
+Angle: 108°, Rotations: 0, Menu Position: -14
+Direction: CW, Counter: -14, Total Steps: 42
+Angle: 108°, Rotations: 0, Menu Position: -14
+Direction: CW, Counter: -14, Total Steps: 42
+Angle: 108°, Rotations: 0, Menu Position: -14
+Direction: CW, Counter: -14, Total Steps: 42
+Angle: 108°, Rotations: 0, Menu Position: -14
+Direction: CW, Counter: -13, Total Steps: 43
+Angle: 126°, Rotations: 0, Menu Position: -13
+Direction: CW, Counter: -13, Total Steps: 43
+Angle: 126°, Rotations: 0, Menu Position: -13
+Direction: CW, Counter: -13, Total Steps: 43
+Angle: 126°, Rotations: 0, Menu Position: -13
+Direction: CW, Counter: -13, Total Steps: 43
+Angle: 126°, Rotations: 0, Menu Position: -13
+Direction: CW, Counter: -12, Total Steps: 44
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CW, Counter: -12, Total Steps: 44
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CW, Counter: -12, Total Steps: 44
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CW, Counter: -12, Total Steps: 44
+Angle: 144°, Rotations: 0, Menu Position: -12
+Direction: CW, Counter: -11, Total Steps: 45
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CW, Counter: -11, Total Steps: 45
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CW, Counter: -11, Total Steps: 45
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CW, Counter: -11, Total Steps: 45
+Angle: 162°, Rotations: 0, Menu Position: -11
+Direction: CW, Counter: -10, Total Steps: 46
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CW, Counter: -10, Total Steps: 46
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CW, Counter: -10, Total Steps: 46
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CW, Counter: -10, Total Steps: 46
+Angle: 180°, Rotations: 0, Menu Position: -10
+Direction: CW, Counter: -9, Total Steps: 47
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CW, Counter: -9, Total Steps: 47
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CW, Counter: -9, Total Steps: 47
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CW, Counter: -9, Total Steps: 47
+Angle: 198°, Rotations: 0, Menu Position: -9
+Direction: CW, Counter: -8, Total Steps: 48
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CW, Counter: -8, Total Steps: 48
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CW, Counter: -8, Total Steps: 48
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CW, Counter: -8, Total Steps: 48
+Angle: 216°, Rotations: 0, Menu Position: -8
+Direction: CW, Counter: -7, Total Steps: 49
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CW, Counter: -7, Total Steps: 49
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CW, Counter: -7, Total Steps: 49
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CW, Counter: -7, Total Steps: 49
+Angle: 234°, Rotations: 0, Menu Position: -7
+Direction: CW, Counter: -6, Total Steps: 50
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CW, Counter: -6, Total Steps: 50
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CW, Counter: -6, Total Steps: 50
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CW, Counter: -6, Total Steps: 50
+Angle: 252°, Rotations: 0, Menu Position: -6
+Direction: CW, Counter: -5, Total Steps: 51
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CW, Counter: -5, Total Steps: 51
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CW, Counter: -5, Total Steps: 51
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CW, Counter: -5, Total Steps: 51
+Angle: 270°, Rotations: 0, Menu Position: -5
+Direction: CW, Counter: -4, Total Steps: 52
+Angle: 288°, Rotations: 0, Menu Position: -4
+Direction: CW, Counter: -4, Total Steps: 52
+Angle: 288°, Rotations: 0, Menu Position: -4
+Direction: CW, Counter: -4, Total Steps: 52
+Angle: 288°, Rotations: 0, Menu Position: -4
+Direction: CW, Counter: -4, Total Steps: 52
+Angle: 288°, Rotations: 0, Menu Position: -4
+Direction: CW, Counter: -3, Total Steps: 53
+Angle: 306°, Rotations: 0, Menu Position: -3
+Direction: CW, Counter: -3, Total Steps: 53
+Angle: 306°, Rotations: 0, Menu Position: -3
+Direction: CW, Counter: -3, Total Steps: 53
+Angle: 306°, Rotations: 0, Menu Position: -3
+Direction: CW, Counter: -3, Total Steps: 53
+Angle: 306°, Rotations: 0, Menu Position: -3
+Direction: CW, Counter: -2, Total Steps: 54
+Angle: 324°, Rotations: 0, Menu Position: -2
+Direction: CW, Counter: -2, Total Steps: 54
+Angle: 324°, Rotations: 0, Menu Position: -2
+Direction: CW, Counter: -2, Total Steps: 54
+Angle: 324°, Rotations: 0, Menu Position: -2
+Direction: CW, Counter: -2, Total Steps: 54
+Angle: 324°, Rotations: 0, Menu Position: -2
+Direction: CW, Counter: -1, Total Steps: 55
+Angle: 342°, Rotations: 0, Menu Position: -1
+Direction: CW, Counter: -1, Total Steps: 55
+Angle: 342°, Rotations: 0, Menu Position: -1
+Direction: CW, Counter: -1, Total Steps: 55
+Angle: 342°, Rotations: 0, Menu Position: -1
+Direction: CW, Counter: -1, Total Steps: 55
+Angle: 342°, Rotations: 0, Menu Position: -1
+Direction: CW, Counter: 0, Total Steps: 56
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CW, Counter: 0, Total Steps: 56
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CW, Counter: 0, Total Steps: 56
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CW, Counter: 0, Total Steps: 56
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CW, Counter: 1, Total Steps: 57
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 57
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 57
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 57
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 57
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 0, Total Steps: 58
+Angle: 0°, Rotations: 0, Menu Position: 0
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  9 2025 14:42:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a524h ( 42276) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a54c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a570 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001c8e4 vaddr=40080000 size=03734h ( 14132) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14f04h ( 85764) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00034f2c vaddr=40083734 size=09994h ( 39316) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (185) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     TLC-SIM_v2[0m
+[0;32mI (197) app_init: App version:      1[0m
+[0;32mI (201) app_init: Compile time:     Jan 10 2025 11:16:32[0m
+[0;32mI (206) app_init: ELF file SHA256:  b7befa331...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008D0C8 len 00012F38 (75 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+Hello, world!
+Direction: CCW, Counter: 0, Total Steps: 0
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CCW, Counter: 0, Total Steps: 0
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  9 2025 14:42:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a524h ( 42276) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a54c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a570 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001c8e4 vaddr=40080000 size=03734h ( 14132) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14f04h ( 85764) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00034f2c vaddr=40083734 size=09994h ( 39316) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (185) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     TLC-SIM_v2[0m
+[0;32mI (197) app_init: App version:      1[0m
+[0;32mI (201) app_init: Compile time:     Jan 10 2025 11:16:32[0m
+[0;32mI (206) app_init: ELF file SHA256:  b7befa331...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008D0C8 len 00012F38 (75 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+Hello, world!
+Direction: CCW, Counter: 0, Total Steps: 0
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CCW, Counter: 0, Total Steps: 0
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jan  9 2025 14:42:13[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a524h ( 42276) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a54c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a570 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001c8e4 vaddr=40080000 size=03734h ( 14132) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14f04h ( 85764) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=00034f2c vaddr=40083734 size=09994h ( 39316) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (185) cpu_start: Multicore app[0m
+[0;32mI (193) cpu_start: Pro cpu start user code[0m
+[0;32mI (193) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (193) app_init: Application information:[0m
+[0;32mI (193) app_init: Project name:     TLC-SIM_v2[0m
+[0;32mI (197) app_init: App version:      1[0m
+[0;32mI (201) app_init: Compile time:     Jan 10 2025 11:16:32[0m
+[0;32mI (206) app_init: ELF file SHA256:  b7befa331...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (247) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 4008D0C8 len 00012F38 (75 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+Hello, world!
+Direction: CCW, Counter: 0, Total Steps: 0
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CCW, Counter: 0, Total Steps: 0
+Angle: 0°, Rotations: 0, Menu Position: 0
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 1, Total Steps: 1
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CW, Counter: 2, Total Steps: 2
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CW, Counter: 3, Total Steps: 3
+Angle: 54°, Rotations: 0, Menu Position: 3
+Direction: CW, Counter: 3, Total Steps: 3
+Angle: 54°, Rotations: 0, Menu Position: 3
+Direction: CW, Counter: 3, Total Steps: 3
+Angle: 54°, Rotations: 0, Menu Position: 3
+Direction: CW, Counter: 3, Total Steps: 3
+Angle: 54°, Rotations: 0, Menu Position: 3
+Direction: CW, Counter: 4, Total Steps: 4
+Angle: 72°, Rotations: 0, Menu Position: 4
+Direction: CW, Counter: 4, Total Steps: 4
+Angle: 72°, Rotations: 0, Menu Position: 4
+Direction: CW, Counter: 4, Total Steps: 4
+Angle: 72°, Rotations: 0, Menu Position: 4
+Direction: CW, Counter: 4, Total Steps: 4
+Angle: 72°, Rotations: 0, Menu Position: 4
+Direction: CW, Counter: 5, Total Steps: 5
+Angle: 90°, Rotations: 0, Menu Position: 5
+Direction: CW, Counter: 5, Total Steps: 5
+Angle: 90°, Rotations: 0, Menu Position: 5
+Direction: CW, Counter: 5, Total Steps: 5
+Angle: 90°, Rotations: 0, Menu Position: 5
+Direction: CW, Counter: 5, Total Steps: 5
+Angle: 90°, Rotations: 0, Menu Position: 5
+Direction: CW, Counter: 6, Total Steps: 6
+Angle: 108°, Rotations: 0, Menu Position: 6
+Direction: CW, Counter: 6, Total Steps: 6
+Angle: 108°, Rotations: 0, Menu Position: 6
+Direction: CW, Counter: 6, Total Steps: 6
+Angle: 108°, Rotations: 0, Menu Position: 6
+Direction: CW, Counter: 6, Total Steps: 6
+Angle: 108°, Rotations: 0, Menu Position: 6
+Direction: CW, Counter: 7, Total Steps: 7
+Angle: 126°, Rotations: 0, Menu Position: 7
+Direction: CW, Counter: 7, Total Steps: 7
+Angle: 126°, Rotations: 0, Menu Position: 7
+Direction: CW, Counter: 7, Total Steps: 7
+Angle: 126°, Rotations: 0, Menu Position: 7
+Direction: CW, Counter: 7, Total Steps: 7
+Angle: 126°, Rotations: 0, Menu Position: 7
+Direction: CW, Counter: 8, Total Steps: 8
+Angle: 144°, Rotations: 0, Menu Position: 8
+Direction: CW, Counter: 8, Total Steps: 8
+Angle: 144°, Rotations: 0, Menu Position: 8
+Direction: CW, Counter: 8, Total Steps: 8
+Angle: 144°, Rotations: 0, Menu Position: 8
+Direction: CW, Counter: 8, Total Steps: 8
+Angle: 144°, Rotations: 0, Menu Position: 8
+Direction: CW, Counter: 9, Total Steps: 9
+Angle: 162°, Rotations: 0, Menu Position: 9
+Direction: CW, Counter: 9, Total Steps: 9
+Angle: 162°, Rotations: 0, Menu Position: 9
+Direction: CW, Counter: 9, Total Steps: 9
+Angle: 162°, Rotations: 0, Menu Position: 9
+Direction: CW, Counter: 9, Total Steps: 9
+Angle: 162°, Rotations: 0, Menu Position: 9
+Direction: CW, Counter: 10, Total Steps: 10
+Angle: 180°, Rotations: 0, Menu Position: 10
+Direction: CW, Counter: 10, Total Steps: 10
+Angle: 180°, Rotations: 0, Menu Position: 10
+Direction: CW, Counter: 10, Total Steps: 10
+Angle: 180°, Rotations: 0, Menu Position: 10
+Direction: CW, Counter: 10, Total Steps: 10
+Angle: 180°, Rotations: 0, Menu Position: 10
+Direction: CW, Counter: 11, Total Steps: 11
+Angle: 198°, Rotations: 0, Menu Position: 11
+Direction: CW, Counter: 11, Total Steps: 11
+Angle: 198°, Rotations: 0, Menu Position: 11
+Direction: CW, Counter: 11, Total Steps: 11
+Angle: 198°, Rotations: 0, Menu Position: 11
+Direction: CW, Counter: 11, Total Steps: 11
+Angle: 198°, Rotations: 0, Menu Position: 11
+Direction: CW, Counter: 12, Total Steps: 12
+Angle: 216°, Rotations: 0, Menu Position: 12
+Direction: CW, Counter: 12, Total Steps: 12
+Angle: 216°, Rotations: 0, Menu Position: 12
+Direction: CW, Counter: 12, Total Steps: 12
+Angle: 216°, Rotations: 0, Menu Position: 12
+Direction: CW, Counter: 12, Total Steps: 12
+Angle: 216°, Rotations: 0, Menu Position: 12
+Direction: CW, Counter: 13, Total Steps: 13
+Angle: 234°, Rotations: 0, Menu Position: 13
+Direction: CW, Counter: 13, Total Steps: 13
+Angle: 234°, Rotations: 0, Menu Position: 13
+Direction: CW, Counter: 13, Total Steps: 13
+Angle: 234°, Rotations: 0, Menu Position: 13
+Direction: CW, Counter: 13, Total Steps: 13
+Angle: 234°, Rotations: 0, Menu Position: 13
+Direction: CW, Counter: 14, Total Steps: 14
+Angle: 252°, Rotations: 0, Menu Position: 14
+Direction: CW, Counter: 14, Total Steps: 14
+Angle: 252°, Rotations: 0, Menu Position: 14
+Direction: CW, Counter: 14, Total Steps: 14
+Angle: 252°, Rotations: 0, Menu Position: 14
+Direction: CW, Counter: 14, Total Steps: 14
+Angle: 252°, Rotations: 0, Menu Position: 14
+Direction: CW, Counter: 15, Total Steps: 15
+Angle: 270°, Rotations: 0, Menu Position: 15
+Direction: CW, Counter: 15, Total Steps: 15
+Angle: 270°, Rotations: 0, Menu Position: 15
+Direction: CW, Counter: 15, Total Steps: 15
+Angle: 270°, Rotations: 0, Menu Position: 15
+Direction: CW, Counter: 15, Total Steps: 15
+Angle: 270°, Rotations: 0, Menu Position: 15
+Direction: CW, Counter: 16, Total Steps: 16
+Angle: 288°, Rotations: 0, Menu Position: 16
+Direction: CW, Counter: 16, Total Steps: 16
+Angle: 288°, Rotations: 0, Menu Position: 16
+Direction: CW, Counter: 16, Total Steps: 16
+Angle: 288°, Rotations: 0, Menu Position: 16
+Direction: CW, Counter: 16, Total Steps: 16
+Angle: 288°, Rotations: 0, Menu Position: 16
+Direction: CW, Counter: 17, Total Steps: 17
+Angle: 306°, Rotations: 0, Menu Position: 17
+Direction: CW, Counter: 17, Total Steps: 17
+Angle: 306°, Rotations: 0, Menu Position: 17
+Direction: CW, Counter: 17, Total Steps: 17
+Angle: 306°, Rotations: 0, Menu Position: 17
+Direction: CW, Counter: 17, Total Steps: 17
+Angle: 306°, Rotations: 0, Menu Position: 17
+Direction: CW, Counter: 18, Total Steps: 18
+Angle: 324°, Rotations: 0, Menu Position: 18
+Direction: CW, Counter: 18, Total Steps: 18
+Angle: 324°, Rotations: 0, Menu Position: 18
+Direction: CW, Counter: 18, Total Steps: 18
+Angle: 324°, Rotations: 0, Menu Position: 18
+Direction: CW, Counter: 18, Total Steps: 18
+Angle: 324°, Rotations: 0, Menu Position: 18
+Direction: CW, Counter: 19, Total Steps: 19
+Angle: 342°, Rotations: 0, Menu Position: 19
+Direction: CW, Counter: 19, Total Steps: 19
+Angle: 342°, Rotations: 0, Menu Position: 19
+Direction: CW, Counter: 19, Total Steps: 19
+Angle: 342°, Rotations: 0, Menu Position: 19
+Direction: CW, Counter: 19, Total Steps: 19
+Angle: 342°, Rotations: 0, Menu Position: 19
+Direction: CW, Counter: 20, Total Steps: 20
+Angle: 0°, Rotations: 1, Menu Position: 20
+Direction: CW, Counter: 20, Total Steps: 20
+Angle: 0°, Rotations: 1, Menu Position: 20
+Direction: CW, Counter: 20, Total Steps: 20
+Angle: 0°, Rotations: 1, Menu Position: 20
+Direction: CW, Counter: 20, Total Steps: 20
+Angle: 0°, Rotations: 1, Menu Position: 20
+Direction: CW, Counter: 20, Total Steps: 20
+Angle: 0°, Rotations: 1, Menu Position: 20
+Direction: CCW, Counter: 19, Total Steps: 21
+Angle: 342°, Rotations: 0, Menu Position: 19
+Direction: CCW, Counter: 19, Total Steps: 21
+Angle: 342°, Rotations: 0, Menu Position: 19
+Direction: CCW, Counter: 19, Total Steps: 21
+Angle: 342°, Rotations: 0, Menu Position: 19
+Direction: CCW, Counter: 19, Total Steps: 21
+Angle: 342°, Rotations: 0, Menu Position: 19
+Direction: CCW, Counter: 18, Total Steps: 22
+Angle: 324°, Rotations: 0, Menu Position: 18
+Direction: CCW, Counter: 18, Total Steps: 22
+Angle: 324°, Rotations: 0, Menu Position: 18
+Direction: CCW, Counter: 18, Total Steps: 22
+Angle: 324°, Rotations: 0, Menu Position: 18
+Direction: CCW, Counter: 18, Total Steps: 22
+Angle: 324°, Rotations: 0, Menu Position: 18
+Direction: CCW, Counter: 17, Total Steps: 23
+Angle: 306°, Rotations: 0, Menu Position: 17
+Direction: CCW, Counter: 17, Total Steps: 23
+Angle: 306°, Rotations: 0, Menu Position: 17
+Direction: CCW, Counter: 17, Total Steps: 23
+Angle: 306°, Rotations: 0, Menu Position: 17
+Direction: CCW, Counter: 17, Total Steps: 23
+Angle: 306°, Rotations: 0, Menu Position: 17
+Direction: CCW, Counter: 16, Total Steps: 24
+Angle: 288°, Rotations: 0, Menu Position: 16
+Direction: CCW, Counter: 16, Total Steps: 24
+Angle: 288°, Rotations: 0, Menu Position: 16
+Direction: CCW, Counter: 16, Total Steps: 24
+Angle: 288°, Rotations: 0, Menu Position: 16
+Direction: CCW, Counter: 16, Total Steps: 24
+Angle: 288°, Rotations: 0, Menu Position: 16
+Direction: CCW, Counter: 15, Total Steps: 25
+Angle: 270°, Rotations: 0, Menu Position: 15
+Direction: CCW, Counter: 15, Total Steps: 25
+Angle: 270°, Rotations: 0, Menu Position: 15
+Direction: CCW, Counter: 15, Total Steps: 25
+Angle: 270°, Rotations: 0, Menu Position: 15
+Direction: CCW, Counter: 15, Total Steps: 25
+Angle: 270°, Rotations: 0, Menu Position: 15
+Direction: CCW, Counter: 14, Total Steps: 26
+Angle: 252°, Rotations: 0, Menu Position: 14
+Direction: CCW, Counter: 14, Total Steps: 26
+Angle: 252°, Rotations: 0, Menu Position: 14
+Direction: CCW, Counter: 14, Total Steps: 26
+Angle: 252°, Rotations: 0, Menu Position: 14
+Direction: CCW, Counter: 14, Total Steps: 26
+Angle: 252°, Rotations: 0, Menu Position: 14
+Direction: CCW, Counter: 13, Total Steps: 27
+Angle: 234°, Rotations: 0, Menu Position: 13
+Direction: CCW, Counter: 13, Total Steps: 27
+Angle: 234°, Rotations: 0, Menu Position: 13
+Direction: CCW, Counter: 13, Total Steps: 27
+Angle: 234°, Rotations: 0, Menu Position: 13
+Direction: CCW, Counter: 13, Total Steps: 27
+Angle: 234°, Rotations: 0, Menu Position: 13
+Direction: CCW, Counter: 12, Total Steps: 28
+Angle: 216°, Rotations: 0, Menu Position: 12
+Direction: CCW, Counter: 12, Total Steps: 28
+Angle: 216°, Rotations: 0, Menu Position: 12
+Direction: CCW, Counter: 12, Total Steps: 28
+Angle: 216°, Rotations: 0, Menu Position: 12
+Direction: CCW, Counter: 12, Total Steps: 28
+Angle: 216°, Rotations: 0, Menu Position: 12
+Direction: CCW, Counter: 11, Total Steps: 29
+Angle: 198°, Rotations: 0, Menu Position: 11
+Direction: CCW, Counter: 11, Total Steps: 29
+Angle: 198°, Rotations: 0, Menu Position: 11
+Direction: CCW, Counter: 11, Total Steps: 29
+Angle: 198°, Rotations: 0, Menu Position: 11
+Direction: CCW, Counter: 11, Total Steps: 29
+Angle: 198°, Rotations: 0, Menu Position: 11
+Direction: CCW, Counter: 10, Total Steps: 30
+Angle: 180°, Rotations: 0, Menu Position: 10
+Direction: CCW, Counter: 10, Total Steps: 30
+Angle: 180°, Rotations: 0, Menu Position: 10
+Direction: CCW, Counter: 10, Total Steps: 30
+Angle: 180°, Rotations: 0, Menu Position: 10
+Direction: CCW, Counter: 10, Total Steps: 30
+Angle: 180°, Rotations: 0, Menu Position: 10
+Direction: CCW, Counter: 9, Total Steps: 31
+Angle: 162°, Rotations: 0, Menu Position: 9
+Direction: CCW, Counter: 9, Total Steps: 31
+Angle: 162°, Rotations: 0, Menu Position: 9
+Direction: CCW, Counter: 9, Total Steps: 31
+Angle: 162°, Rotations: 0, Menu Position: 9
+Direction: CCW, Counter: 9, Total Steps: 31
+Angle: 162°, Rotations: 0, Menu Position: 9
+Direction: CCW, Counter: 8, Total Steps: 32
+Angle: 144°, Rotations: 0, Menu Position: 8
+Direction: CCW, Counter: 8, Total Steps: 32
+Angle: 144°, Rotations: 0, Menu Position: 8
+Direction: CCW, Counter: 8, Total Steps: 32
+Angle: 144°, Rotations: 0, Menu Position: 8
+Direction: CCW, Counter: 8, Total Steps: 32
+Angle: 144°, Rotations: 0, Menu Position: 8
+Direction: CCW, Counter: 7, Total Steps: 33
+Angle: 126°, Rotations: 0, Menu Position: 7
+Direction: CCW, Counter: 7, Total Steps: 33
+Angle: 126°, Rotations: 0, Menu Position: 7
+Direction: CCW, Counter: 7, Total Steps: 33
+Angle: 126°, Rotations: 0, Menu Position: 7
+Direction: CCW, Counter: 7, Total Steps: 33
+Angle: 126°, Rotations: 0, Menu Position: 7
+Direction: CCW, Counter: 6, Total Steps: 34
+Angle: 108°, Rotations: 0, Menu Position: 6
+Direction: CCW, Counter: 6, Total Steps: 34
+Angle: 108°, Rotations: 0, Menu Position: 6
+Direction: CCW, Counter: 6, Total Steps: 34
+Angle: 108°, Rotations: 0, Menu Position: 6
+Direction: CCW, Counter: 6, Total Steps: 34
+Angle: 108°, Rotations: 0, Menu Position: 6
+Direction: CCW, Counter: 5, Total Steps: 35
+Angle: 90°, Rotations: 0, Menu Position: 5
+Direction: CCW, Counter: 5, Total Steps: 35
+Angle: 90°, Rotations: 0, Menu Position: 5
+Direction: CCW, Counter: 5, Total Steps: 35
+Angle: 90°, Rotations: 0, Menu Position: 5
+Direction: CCW, Counter: 5, Total Steps: 35
+Angle: 90°, Rotations: 0, Menu Position: 5
+Direction: CCW, Counter: 4, Total Steps: 36
+Angle: 72°, Rotations: 0, Menu Position: 4
+Direction: CCW, Counter: 4, Total Steps: 36
+Angle: 72°, Rotations: 0, Menu Position: 4
+Direction: CCW, Counter: 4, Total Steps: 36
+Angle: 72°, Rotations: 0, Menu Position: 4
+Direction: CCW, Counter: 4, Total Steps: 36
+Angle: 72°, Rotations: 0, Menu Position: 4
+Direction: CCW, Counter: 3, Total Steps: 37
+Angle: 54°, Rotations: 0, Menu Position: 3
+Direction: CCW, Counter: 3, Total Steps: 37
+Angle: 54°, Rotations: 0, Menu Position: 3
+Direction: CCW, Counter: 3, Total Steps: 37
+Angle: 54°, Rotations: 0, Menu Position: 3
+Direction: CCW, Counter: 3, Total Steps: 37
+Angle: 54°, Rotations: 0, Menu Position: 3
+Direction: CCW, Counter: 2, Total Steps: 38
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CCW, Counter: 2, Total Steps: 38
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CCW, Counter: 2, Total Steps: 38
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CCW, Counter: 2, Total Steps: 38
+Angle: 36°, Rotations: 0, Menu Position: 2
+Direction: CCW, Counter: 1, Total Steps: 39
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 1, Total Steps: 39
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 1, Total Steps: 39
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 1, Total Steps: 39
+Angle: 18°, Rotations: 0, Menu Position: 1
+Direction: CCW, Counter: 0, Total Steps: 40
+Angle: 0°, Rotations: 0, Menu Position: 0

@@ -1,0 +1,12 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPathWin": "C:\\Users\\tlcadmin\\esp\\v5.4\\esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.portWin": "COM4",
+    "idf.toolsPathWin": "C:\\Users\\alikhaledahmed\\.espressif",
+    "files.associations": {
+        "freertos.h": "c"
+    }
+}
