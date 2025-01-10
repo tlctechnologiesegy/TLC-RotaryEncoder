@@ -33,6 +33,12 @@ static int button_state = 0;
 // Add queue handle
 static QueueHandle_t encoder_event_queue = NULL;
 
+// Add button tracking variables
+static uint32_t button_press_count = 0;
+static uint32_t last_press_duration = 0;
+static TickType_t press_start_time = 0;
+static QueueHandle_t button_event_queue = NULL;
+
 // Timer ISR to handle rotary encoder reading
 bool IRAM_ATTR timer_isr_callback(gptimer_handle_t timer, const gptimer_alarm_event_data_t *edata, void *user_ctx) {
     static int last_valid_state_a = -1;
@@ -44,8 +50,9 @@ bool IRAM_ATTR timer_isr_callback(gptimer_handle_t timer, const gptimer_alarm_ev
     BaseType_t high_task_wakeup = pdFALSE;
     TickType_t current_time = xTaskGetTickCountFromISR();
 
-    // Only process if enough time has passed since last change
-    if ((current_time - last_change_time) >= pdMS_TO_TICKS(5)) {
+    // Fix time comparison
+    TickType_t time_diff = current_time - last_change_time;
+    if (time_diff >= pdMS_TO_TICKS(5)) {
         if ((last_valid_state_a != current_state_a || last_valid_state_b != current_state_b) && 
             (current_state_a == last_state_a && current_state_b == last_state_b)) {
             
@@ -109,23 +116,39 @@ void encoder_printer_task(void *pvParameter) {
     }
 }
 
-// Task to check the button state
-void rotary_encoder_task(void *pvParameter) {
-    int last_button_state = button_state;
+// Remove old button task as it's replaced by button_monitor_task
 
+// Button monitoring task
+void button_monitor_task(void *pvParameter) {
+    button_event_t event;
+    static bool was_pressed = false;
+    
     while (1) {
-        int button_pressed = rotary_encoder_read_button();
+        bool is_pressed = (gpio_get_level(ROTARY_ENCODER_BUTTON_PIN) == 0); // Active low
 
-        if (button_pressed != last_button_state) {
-            if (button_pressed) {
-                printf("Button pressed!\n");
-            } else {
-                printf("Button released!\n");
-            }
-            last_button_state = button_pressed;
+        if (is_pressed && !was_pressed) {
+            // Button just pressed
+            press_start_time = xTaskGetTickCount();
+            printf("Button pressed! Count: %lu\n", button_press_count);
         }
-
-        vTaskDelay(pdMS_TO_TICKS(100)); // Adjust the delay as needed
+        else if (!is_pressed && was_pressed) {
+            // Button just released
+            TickType_t press_end_time = xTaskGetTickCount();
+            last_press_duration = (press_end_time - press_start_time) * portTICK_PERIOD_MS;
+            button_press_count++;
+            
+            printf("Button released! Duration: %lu ms, Total presses: %lu\n", 
+                   last_press_duration, button_press_count);
+                   
+            // Prepare and send button event
+            event.pressed = false;
+            event.press_duration = last_press_duration;
+            event.press_count = button_press_count;
+            xQueueSend(button_event_queue, &event, 0);
+        }
+        
+        was_pressed = is_pressed;
+        vTaskDelay(pdMS_TO_TICKS(10)); // 10ms polling interval
     }
 }
 
@@ -149,8 +172,10 @@ void rotary_encoder_init(void) {
     // Initialize the hardware timer
     rotary_encoder_timer_init();
 
-    // Create a FreeRTOS task to check the button state
-    xTaskCreate(rotary_encoder_task, "RotaryEncoderTask", 2048, NULL, 5, NULL);
+    // Remove old button task creation
+    // Create button monitor task instead
+    button_event_queue = xQueueCreate(5, sizeof(button_event_t));
+    xTaskCreate(button_monitor_task, "ButtonMonitor", 2048, NULL, 5, NULL);
 
     // Create printer task
     xTaskCreate(encoder_printer_task, "EncoderPrinter", 2048, NULL, 1, NULL);
@@ -184,23 +209,7 @@ void rotary_encoder_timer_init(void) {
 
 // Read the button state with debounce
 int rotary_encoder_read_button(void) {
-    static int last_state = 1;
-    static int last_debounce_time = 0;
-    int current_state = gpio_get_level(ROTARY_ENCODER_BUTTON_PIN);
-    if (current_state != last_state) {
-        last_debounce_time = xTaskGetTickCount();
-    }
-    if ((xTaskGetTickCount() - last_debounce_time) > (50 / portTICK_PERIOD_MS)) {
-        if (current_state != last_state) {
-            last_state = current_state;
-            if (current_state == 0) { // Active low: button pressed
-                button_state = 1;
-                return 1; // Button pressed
-            }
-        }
-    }
-    button_state = 0;
-    return 0; // Button not pressed
+    return (gpio_get_level(ROTARY_ENCODER_BUTTON_PIN) == 0);
 }
 
 // New getter functions
@@ -228,4 +237,13 @@ int rotary_encoder_get_elapsed_steps(void) {
 // Add getter for menu position
 int rotary_encoder_get_menu_position(void) {
     return menu_position;
+}
+
+// Add new getter functions for button
+uint32_t rotary_encoder_get_button_press_count(void) {
+    return button_press_count;
+}
+
+uint32_t rotary_encoder_get_last_press_duration(void) {
+    return last_press_duration;
 }
